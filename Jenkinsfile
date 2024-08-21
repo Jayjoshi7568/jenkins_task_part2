@@ -17,8 +17,8 @@ pipeline {
 
                 script {
                     def compose = readFile(file: 'docker-compose-template.yml')
-                    def composeConfig = compose.replace('${IMAGE_NAME}', ${IMAGE_NAME})
-                    writeFile file: './docker-compose.yml', text: compose
+                    def composeConfig = compose.replace('${IMAGE_NAME}', "${IMAGE_NAME}")
+                    writeFile file: './docker-compose.yml', text: composeConfig
                 }
 
                 script {
