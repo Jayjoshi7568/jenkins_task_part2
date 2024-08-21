@@ -1,7 +1,7 @@
 pipeline {
     agent any
     tools {
-        docker 'docker'
+        Docker 'docker'
     }
     environment {
         IMAGE_NAME = "jay7568/react_app:${env.BUILD_NUMBER}"
