@@ -28,8 +28,8 @@ pipeline {
                 }
 
                 script {
-                    // sh "docker-compose up -d"
-                    sh "cat docker-compose.yml"
+                    sh "docker-compose up -d"
+                    // sh "cat docker-compose.yml"
                 }
             }
         }
