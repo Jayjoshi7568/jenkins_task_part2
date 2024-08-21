@@ -28,7 +28,7 @@ pipeline {
                 }
 
                 script {
-                    sh "docker-compose up -d"
+                    sh "docker compose up -d"
                     // sh "cat docker-compose.yml"
                 }
             }
